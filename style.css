@@ -6,6 +6,8 @@
 }
 
 body{
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #000000;
     color: #f6f6f6;
 }
@@ -17,13 +19,16 @@ body{
 .presentacion{
     display: flex;
     align-items: center;
-    margin: 10%;
+    margin: 10% 15%;
     justify-content: space-between;
 }
 
 .presentacion__contenido{
     width: 615px;
-    height: 482px;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .presentacion__contenido__titulo{
@@ -34,4 +39,21 @@ body{
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion__enlaces__link{
+    background-color: #22D4FD;
+    border-radius: 16px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    text-align: center;
+    width: 280px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #000000;
 }
